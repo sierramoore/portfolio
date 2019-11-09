@@ -1,0 +1,42 @@
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+
+  @include respond(tab-land) {  // width < 1200?
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-port) { // width < 900?
+    font-size: 50%;
+  }
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  //z-index: -1;
+  opacity: .2;
+  overflow: hidden;
+  background-image: linear-gradient(to bottom, #0f2027, #203a43, #2c5364), url("../../assets/img/Up.mp4");
+}
+
+body {
+  //height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+
+  //background-image: linear-gradient(105deg, #355c7d, #6c5b7b,#c06c84);
+}

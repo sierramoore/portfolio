@@ -1,0 +1,28 @@
+.header {
+  color: #3c3c3c;
+  font-size: 8rem;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  letter-spacing: 5px;
+  z-index: 2;
+  margin: 3rem auto;
+
+  &__primary {
+
+  }
+  &__secondary {
+    font-size: 5rem;
+    margin: 4rem;
+    //writing-mode: vertical-lr;
+    //text-orientation: mixed;
+  }
+}
+
+.border {
+  box-sizing: border-box;
+  border: 1px solid #3c3c3c;
+  height: 90vh;
+  width: 90vw;
+  margin: 4rem auto;
+}
