@@ -1,0 +1,30 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  z-index: 999;
+  box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.9);
+  margin: 2rem;
+  height: 42rem;
+  max-width: 35rem;
+  border-radius: 2rem;
+  background-color: #e8e8e8;
+  position: relative;
+
+  &__img {
+    border-radius: 2rem 2rem 0 0;
+    height: auto;
+    max-height: 30rem;
+    width: 35rem;
+    //width: 35rem;
+    //width: auto;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    line-height: 1.5;
+  }
+}
