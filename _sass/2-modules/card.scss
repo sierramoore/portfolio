@@ -1,6 +1,7 @@
 .card-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -9,12 +10,12 @@
   //box-shadow: inset 2px 2px 1rem rgba(0,0,0,0.3);
 
   margin: 2rem;
-  height: 40rem;
+  height: auto;
   max-width: 35rem;
   //border-radius: 1rem;
-  background-color: #fff !important;
+  background-color: #2d2d2d !important;
   position: relative;
-  outline: .7rem outset $violet;
+  outline: .2rem outset $violet;
   outline-offset: 1.5rem;
   transition: outline, outline-offset .2s;
   //padding: 2rem;
@@ -36,8 +37,8 @@
   &:hover {
     background: #9e4aff;
     box-shadow: 0 0 1rem .6rem $violet;
-    outline-offset: -.3rem;
-    outline: solid 10px $violet;
+    outline-offset: -.1rem;
+    //outline: solid 10px $violet;
     animation: borderShrink .17s .2s ease-in infinite;
   }
 
@@ -53,18 +54,19 @@
   &__text {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.8rem;
-    padding: 1rem 2rem;
+    padding: 1rem 1.5rem;
     line-height: 1.5;
-    //color: white;
-    //background-color: #e8e8e8 !important;
+    color: white;
+    text-align: center;
+    letter-spacing: 3px;
   }
 }
 
 @keyframes borderShrink {
   from {
-    box-shadow: 0 0 3rem .6rem $violet;
+    box-shadow: 0 0 3rem .2rem $violet;
   }
   to {
-    box-shadow: 0 0 3rem .6rem $violet;
+    box-shadow: 0 0 3rem .2rem $violet;
   }
 }
