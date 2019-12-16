@@ -9,6 +9,11 @@
     bottom: -1.5rem;
     left: 3.5rem;
     z-index: -1;
+
+    @include respond(phone) {
+      width: 20rem;
+      height: 20rem;
+    }
   }
 
   .sig {
@@ -18,6 +23,17 @@
     position: absolute;
     bottom: -5rem;
     left: 15rem;
+    width: 100%;
+
+    @include respond(large-phone) {
+      left: 12rem;
+    }
+    @include respond(phone) {
+      left: 9rem;
+    }
+    @include respond(mid-phone) {
+      left: 7rem;
+    }
   }
 }
 .header-2 {
@@ -29,10 +45,20 @@
   font-family: 'Montserrat', sans-serif;
   color: $text-grey;
 
+  @include respond(col) {
+    flex-direction: column;
+    align-items: center;
+    margin: 6rem auto 3rem auto;
+  }
+
   .right {
     width: 40%;
     //margin-right: 5%;
     position: relative;
+
+    @include respond(col) {
+      margin-bottom: 8rem;
+    }
 
     &__title{
       font-size: 4rem;
@@ -44,22 +70,37 @@
       top: -3rem;
       left: -13rem;
       z-index: 1;
+
+      @include respond(phone) {
+        font-size: 3.5rem;
+        top: -2rem;
+        left: -12rem;
+      }
+      @include respond(four) {
+        font-size: 3rem;
+      }
     }
     &__text {
       font-size: 1.6rem;
-      text-align: center;
-      width: 36%;
+      text-align: right;
+      max-width: 15rem;
 
       position: absolute;
       top: 5rem;
       left: -13rem;
       z-index: 1;
+
+      //shape-outside: url("../../assets/img/sm.jpg");
     }
     &__img {
       width: auto;
       height: 25rem;
       -webkit-filter: grayscale(100%);
       filter: grayscale(100%);
+
+      @include respond(phone) {
+        height: 20rem;
+      }
     }
   }
 
@@ -95,18 +136,19 @@
   height: auto;
   padding: 5rem 0;
 
-  //display: flex;
-  //justify-content: center;
-
-  //&:first-child {
-  //  align-self: flex-start;
-  //}
+  @include respond(col) {
+    padding: 5rem 0 2rem 0;
+  }
 }
 
 .exp-box {
   display: flex;
   flex-direction: column;
   max-width: 35rem;
+
+  @include respond(col) {
+    margin-bottom: 4rem;
+  }
 }
 
 .resume-text {
@@ -132,4 +174,8 @@
 .exp {
   height: auto;
   padding: 5rem 0 8rem 0;
+
+  @include respond(col) {
+    padding: 5rem 0 2rem 0;
+  }
 }
