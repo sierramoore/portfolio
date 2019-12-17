@@ -1,8 +1,9 @@
 title: Sierra Moore
 email: sierra.v.moore@gmail.com
 description: ""
-baseurl: ""
+#baseurl: ""
 url: "https://sierramoore.github.io"
+repository: https://github.com/portfolio
 github_username:  sierramoore
 
 sass:
