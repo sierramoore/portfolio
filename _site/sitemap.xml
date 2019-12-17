@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://localhost:4000/about/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/resume.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/assets/docs/sierra_moore_resume.pdf</loc>
+<lastmod>2019-10-22T00:23:01+02:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/css-particles/dist/</loc>
+<lastmod>2019-09-05T20:10:06+02:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/css-particles/src/</loc>
+<lastmod>2019-09-05T20:10:06+02:00</lastmod>
+</url>
+</urlset>
