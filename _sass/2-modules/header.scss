@@ -1,18 +1,30 @@
 .header {
-  color: $text-grey;
-  font-size: 6rem;
-  text-align: center;
+  color: $gold;
+
   font-family: 'Montserrat', sans-serif;
   font-weight: 100;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   z-index: 2;
-  padding: 4rem 0 2rem 0;
+  padding: 4rem 2rem 0;
+
+
 
 
   &__primary {
+    text-align: center;
+    font-size: 3.5rem;
+    position: absolute;
+    top: 8%;
 
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: tb-lr;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    -webkit-font-feature-settings: "vkrn", "vpal";
+    font-feature-settings: "vkrn", "vpal";
   }
   &__secondary {
+    text-align: right;
     font-size: 3rem;
     margin-bottom: 4rem;
     //writing-mode: vertical-lr;

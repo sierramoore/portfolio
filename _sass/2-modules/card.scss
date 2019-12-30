@@ -4,55 +4,69 @@
   flex-wrap: wrap;
 }
 
+.border-btm {
+  height: 13rem;
+  width: 25rem;
+  background-color: rgba(1, 0, 50, 0.85);
+  clip-path: polygon(92% 13%, 16% 100%, 68% 100%);
+  position: absolute;
+  bottom: 1.3rem;
+  left: 1.95rem;
+  color: $gold;
+
+  &__text {
+    text-align: center;
+    padding: 1.5rem .5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: $gold;
+    font-size: 1.6rem;
+
+    position: absolute;
+    right: 6rem;
+    top: 7rem;
+
+    transform: rotate(-33deg);
+  }
+}
+
 .card {
   z-index: 1;
-  //box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.9);
-  //box-shadow: inset 2px 2px 1rem rgba(0,0,0,0.3);
-
   margin: 2rem;
-  //height: auto;
-  //max-width: 35rem;
-  //border-radius: 1rem;
-  //background-color: #2d2d2d !important;
   position: relative;
-  //outline: .2rem outset $violet;
-  //outline-offset: 1.5rem;
-  //transition: outline, outline-offset .2s;
-  //padding: 2rem;
-  //
-
-  //&::after {
-  //  position: absolute;
-  //  content: "";
-  //  top: 0; left: 0; right: 0;
-  //  z-index: -1;
-  //  height: 100%;
-  //  width: 100%;
-  //  margin: 0 auto;
-  //  filter: blur(2rem);
-  //  background: linear-gradient(145deg, #9e4aff, #000db0);
-  //  //background-size: 200% 200%;
-  //  //transform: scale(1.3);
-  //}
-  &:hover {
-    //background: #9e4aff;
-    //box-shadow: 0 0 1rem .6rem $violet;
-    //outline-offset: -.1rem;
-    //outline: solid 10px $violet;
-    //animation: borderShrink .17s .2s ease-in infinite;
-  }
 
   &__img {
-    //border-radius: 1rem 1rem 0 0;
-    height: auto;
-    //max-height: 30rem;
-    width: 35rem;
-    //width: 35rem;
-    //width: auto;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    //clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
-    clip-path: polygon(13% 5%, 90% 5%, 100% 50%, 89% 95%, 14% 95%, 0% 50%);
+    position: relative;
+    max-width: 25rem;
+    width: 100%;
+    height: 25rem;
+    background-size: cover;
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    //clip-path: polygon(13% 5%, 90% 5%, 100% 50%, 89% 95%, 14% 95%, 0% 50%);
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      -webkit-clip-path: polygon(100% 3%, 17% 100%, 100% 100%);
+      clip-path: polygon(100% 3%, 17% 100%, 100% 100%);
+      //-webkit-clip-path: url("#triangle-clip");
+      //clip-path: url("#triangle-clip");
+      background: #9E566E;
+      z-index: 1;
+      width: 100%;
+      height: 155px;
+      -webkit-transition: all 0.2s linear;
+      transition: all 0.2s linear;
+      pointer-events: none;
+    }
+
+    &:hover::after {
+      height: 0;
+      -webkit-transition: all 0.45s ease-in;
+      transition: all 0.45s ease-in;
+    }
   }
 
   &__text {
@@ -60,7 +74,7 @@
     font-size: 1.8rem;
     padding: 1rem 1.5rem;
     line-height: 1.5;
-    color: white;
+    color: $gold;
     text-align: center;
     letter-spacing: 3px;
   }
