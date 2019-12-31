@@ -1,0 +1,22 @@
+.icons{
+  position: absolute;
+  bottom: 5rem;
+  right: 5rem;
+  z-index: 1;
+
+  & > * {
+    display: inline-block;
+  }
+  &__link {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__logo {
+    font-size: 4rem;
+    color: $gold;
+    padding: 0 2rem;
+  }
+}
+

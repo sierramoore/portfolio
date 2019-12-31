@@ -20,8 +20,8 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-#  - jekyll-autoprefixer
+  - jekyll-autoprefixer
 
-#autoprefixer:
-#  browsers:
-#  - last 10 versions
+autoprefixer:
+  browsers:
+  - last 6 versions

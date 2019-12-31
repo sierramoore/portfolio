@@ -1,14 +1,10 @@
 .header {
   color: $gold;
-
   font-family: 'Montserrat', sans-serif;
   font-weight: 100;
   letter-spacing: 3px;
   z-index: 2;
   padding: 4rem 2rem 0;
-
-
-
 
   &__primary {
     text-align: center;
@@ -29,6 +25,21 @@
     margin-bottom: 4rem;
     //writing-mode: vertical-lr;
     //text-orientation: mixed;
+  }
+}
+
+.project-text {
+  color: $gold;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  //animation: fadeOut 2s 2s forwards;
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
   }
 }
 
