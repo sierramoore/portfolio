@@ -5,7 +5,16 @@
 </head>
 <body>
 
-<header class="header-2">
+
+    <div class="link-cont link-cont--left">
+        <div class="link-wrapper">
+        <span class="inner-wrapper wrapper-16">
+            <a  class="hover-16 home" href="{{ site.baseurl }}/home">&#x21E0; Home</a>
+        </span>
+        </div>
+    </div>
+
+<header class="header-2" data-aos="fade-up">
     <div class="right">
         <div class="right__title">Sierra Moore</div>
         <div class="right__text">
@@ -26,15 +35,19 @@
         <div class="left__title">Phone</div>
         <div class="left__text">+34 691 306 612</div>
 
-        <div class="left__title">LinkedIn</div>
-        <div class="left__text">https://www.linkedin.com/in/sierra-moore</div>
+        <a href="https://www.linkedin.com/in/sierra-moore" target="_blank" class="left__link">
+            <div class="left__title">LinkedIn</div>
+            <div class="left__text">https://www.linkedin.com/in/sierra-moore</div>
+        </a>
 
-        <div class="left__title">GitHub</div>
-        <div class="left__text">https://github.com/sierramoore</div>
+        <a href="https://github.com/sierramoore" target="_blank" class="left__link">
+            <div class="left__title">GitHub</div>
+            <div class="left__text">https://github.com/sierramoore</div>
+        </a>
     </div>
 </header>
 
-<section class="education">
+<section class="education" data-aos="fade-up" data-aos-delay="300">
     <h1 class="title title--1">Education</h1>
 
     <div class="flex">
@@ -59,7 +72,7 @@
 
 </section>
 
-<section class="exp">
+<section class="exp" data-aos="fade-right" data-aos-delay="100">
     <h1 class="title title--1">Experience</h1>
 
     <div class="flex">
@@ -84,7 +97,8 @@
     </div>
 </section>
 
-<div class="link-cont">
+
+
     <div class="link-cont">
         <div class="link-wrapper">
         <span class="inner-wrapper wrapper-16">
@@ -92,7 +106,7 @@
         </span>
         </div>
     </div>
-</div>
+
 
 <script>
     AOS.init();

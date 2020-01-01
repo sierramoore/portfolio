@@ -15,6 +15,7 @@ end
 
 # add-later---- gem 'jekyll-autoprefixer' ------
 
+gem 'jekyll-autoprefixer'
 
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

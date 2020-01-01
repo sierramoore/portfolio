@@ -1,8 +1,13 @@
 .icons{
-  position: absolute;
+  position: fixed;
   bottom: 5rem;
   right: 5rem;
   z-index: 1;
+
+  @include respond(col) {
+    bottom: 3rem;
+    right: 2rem;
+  }
 
   & > * {
     display: inline-block;
@@ -17,6 +22,14 @@
     font-size: 4rem;
     color: $gold;
     padding: 0 2rem;
+
+    &--2 {
+      color: $text-grey-dark;
+    }
+
+    @include respond(col) {
+      padding: 0 1rem;
+    }
   }
 }
 
