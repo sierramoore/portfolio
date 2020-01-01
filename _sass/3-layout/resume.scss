@@ -38,9 +38,10 @@
 }
 .header-2 {
   margin: 10rem auto;
-  //padding: 10rem 0;
+  padding: 2rem 0;
   display: flex;
   justify-content: center;
+  align-items: center;
 
   font-family: 'Montserrat', sans-serif;
   color: $text-grey;
@@ -58,6 +59,7 @@
 
     @include respond(col) {
       margin-bottom: 8rem;
+      width: 30%;
     }
 
     &__title{
@@ -107,6 +109,10 @@
   .left {
     width: 20%;
 
+    @include respond(col) {
+      width: 60%;
+    }
+
     &__link {
       text-decoration: none;
       color: inherit;
@@ -131,6 +137,8 @@
     &__text {
       font-size: 1.4rem;
       margin-bottom: 2rem;
+      color: inherit;
+      width: 100%;
     }
   }
 }

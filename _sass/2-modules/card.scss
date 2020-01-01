@@ -15,6 +15,7 @@
   width: 25rem;
   background-color: rgba(1, 0, 50, 0.85);
   clip-path: polygon(92% 13%, 16% 100%, 68% 100%);
+  -webkit-clip-path: polygon(92% 13%, 16% 100%, 68% 100%);
   position: absolute;
   bottom: 1.3rem;
   left: 1.95rem;
@@ -47,7 +48,9 @@
     height: 25rem;
     background-size: cover;
     clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
-    //clip-path: polygon(13% 5%, 90% 5%, 100% 50%, 89% 95%, 14% 95%, 0% 50%);
+    background-position: 50% 50%;
+    object-fit: cover;
+
 
     &::after {
       content: "";
