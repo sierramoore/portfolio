@@ -12,19 +12,17 @@
     position: absolute;
     top: 8%;
 
-    -webkit-writing-mode: vertical-lr;
-    -ms-writing-mode: tb-lr;
-    writing-mode: vertical-lr;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
     text-orientation: upright;
-    -webkit-font-feature-settings: "vkrn", "vpal";
-    font-feature-settings: "vkrn", "vpal";
+    //-webkit-font-feature-settings: "vkrn", "vpal";
+    //font-feature-settings: "vkrn", "vpal";
   }
   &__secondary {
     text-align: right;
     font-size: 3rem;
     margin-bottom: 4rem;
-    //writing-mode: vertical-lr;
-    //text-orientation: mixed;
   }
 }
 
@@ -32,7 +30,7 @@
   color: $gold;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.6rem;
   letter-spacing: 3px;
   //animation: fadeOut 2s 2s forwards;
 }

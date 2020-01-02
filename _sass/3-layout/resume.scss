@@ -34,6 +34,9 @@
     @include respond(mid-phone) {
       left: 7rem;
     }
+    @include respond(small-phone) {
+      width: 115%;
+    }
   }
 }
 .header-2 {
@@ -49,17 +52,18 @@
   @include respond(col) {
     flex-direction: column;
     align-items: center;
-    margin: 6rem auto 3rem auto;
+    margin: 3rem auto;
   }
 
   .right {
     width: 40%;
-    //margin-right: 5%;
     position: relative;
 
     @include respond(col) {
       margin-bottom: 8rem;
-      width: 30%;
+    }
+    @include respond(four) {
+      margin-left: 8%;
     }
 
     &__title{

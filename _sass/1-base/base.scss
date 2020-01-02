@@ -21,25 +21,14 @@ html {
   }
 }
 
-//.bg-video {
-//  position: absolute;
-//  top: 0;
-//  left: 0;
-//  height: 100%;
-//  width: 100%;
-//  //z-index: -1;
-//  opacity: .2;
-//  overflow: hidden;
-//  background-image: linear-gradient(to bottom, #0f2027, #203a43, #2c5364), url("../../assets/img/Up.mp4");
-//}
 
 body {
   box-sizing: border-box;
   min-height: 100vh;
   min-width: 100vw;
   overflow-x: hidden;
-
-  //background-image: linear-gradient(105deg, #355c7d, #6c5b7b,#c06c84);
+  //background-color: rgba($gold, .8);
+  //background-image: linear-gradient($gold, rgba(1, 0, 50, 0.99));
 }
 
 .main {

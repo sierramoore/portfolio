@@ -1,58 +1,8 @@
 .icons{
   position: fixed;
-  bottom: 5rem;
-  right: 5rem;
+  bottom: 0;
+  right: 1rem;
   z-index: 1;
-
-  @include respond(col) {
-    bottom: 3rem;
-    right: 2rem;
-  }
-
-  //& > * {
-  //  display: inline-block;
-  //}
-  //&__link {
-  //  display: inline-block;
-  //  padding: 0;
-  //  margin: 0;
-  //
-  //  &:hover {
-  //    color: red;
-  //
-  //    &__text {
-  //      opacity: 1;
-  //      color: red;
-  //    }
-  //  }
-  //}
-
-  //&__logo {
-  //  font-size: 4rem;
-  //  color: $gold;
-  //  padding: 0 2rem;
-  //
-  //  &__text {
-  //    color: $gold;
-  //    font-family: 'Montserrat', sans-serif;
-  //    font-size: 1.4rem;
-  //    //opacity: 0;
-  //    position: absolute;
-  //    bottom: -2.5rem;
-  //    left: 1rem;
-  //  }
-  //
-  //  &:hover {
-  //    &__text {
-  //      opacity: 1;
-  //      color: red;
-  //    }
-  //  }
-  //
-  //  @include respond(col) {
-  //    padding: 0 1rem;
-  //  }
-  //}
 }
 .icon-box:hover > .icon-box__text {
   opacity: 1;
