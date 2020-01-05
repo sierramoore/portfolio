@@ -1,0 +1,88 @@
+.error{
+  min-width: 100vw;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.88), rgba(1, 0, 50, 0.99));
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__heading {
+    font-family: 'Montserrat', sans-serif;
+    color: $gold;
+    font-size: 2.6rem;
+    text-align: center;
+    letter-spacing: 8px;
+    padding-top: 5rem;
+
+    @include respond(large-phone){
+      font-size: 2rem;
+    }
+  }
+
+  &__img {
+    height: 60vh;
+    width: auto;
+    margin: 5% auto;
+    z-index: 1;
+
+    @include respond(large-phone){
+      height: 40rem;
+      margin: 15% auto;
+    }
+    @include respond(four){
+      height: 33rem;
+    }
+  }
+
+  &__btn {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-size: 2rem;
+    text-align: center;
+    color: rgba(1, 0, 50, 0.99);
+    background-color: $gold;
+    display: inline-block;
+    width: 100%;
+    max-width: 25rem;
+    padding: 1.5rem 1rem;
+    border-radius: 3px;
+    letter-spacing: 4px;
+
+    transition: color 1s;
+
+    $btn-color: $gold;
+    $btn-height: 4rem;
+    $btn-color-dark: shade($btn-color, 40%);
+
+    &:before,
+    &:after {
+      content: '';
+      //@include absolute(0,0,0,0);
+      border-top: $btn-height/2 solid $btn-color-dark;
+      border-bottom: $btn-height/2 solid $btn-color-dark;
+    }
+
+    &:before {
+      border-right: $btn-height/2 solid transparent;
+      transform: translateX(-100%);
+    }
+
+    &:after {
+      border-left: $btn-height/2 solid transparent;
+      transform: translateX(100%);
+    }
+
+    &:hover {
+      color: tint($btn-color, 75%);
+
+      &:before { transform: translateX(-30%); }
+      &:after { transform: translateX(30%); }
+    }
+
+    @include respond(large-phone){
+      font-size: 1.8rem;
+    }
+  }
+}
