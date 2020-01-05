@@ -14,7 +14,7 @@
     font-size: 2.6rem;
     text-align: center;
     letter-spacing: 8px;
-    padding-top: 5rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
 
     @include respond(large-phone){
       font-size: 2rem;
@@ -33,56 +33,132 @@
     }
     @include respond(four){
       height: 33rem;
+      margin: 5rem auto;
     }
   }
 
-  &__btn {
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
-    font-size: 2rem;
-    text-align: center;
-    color: rgba(1, 0, 50, 0.99);
-    background-color: $gold;
-    display: inline-block;
-    width: 100%;
-    max-width: 25rem;
-    padding: 1.5rem 1rem;
-    border-radius: 3px;
-    letter-spacing: 4px;
+  //&__btn {
+  //  font-family: 'Montserrat', sans-serif;
+  //  text-decoration: none;
+  //  font-size: 2rem;
+  //  text-align: center;
+  //  color: rgba(1, 0, 50, 0.99);
+  //  background-color: $gold;
+  //  display: block;
+  //  overflow: hidden;
+  //  width: 100%;
+  //  max-width: 25rem;
+  //  //padding: 1.5rem 1rem;
+  //  border-radius: 3px;
+  //  letter-spacing: 4px;
+  //  margin: 1rem auto;
+  //  line-height: $btn-height;
+  //
+  //  position: relative;
+  //  transition: color 1s;
+  //
+  //  &:before,
+  //  &:after {
+  //    content: '';
+  //    position: absolute;
+  //    top: 0; bottom: 0; left: 0; right: 0;
+  //
+  //    border-top: $btn-height/2 solid $btn-color-dark;
+  //    border-bottom: $btn-height/2 solid $btn-color-dark;
+  //  }
+  //
+  //  &::before {
+  //    border-right: $btn-height/2 solid transparent;
+  //    transform: translateX(-100%);
+  //  }
+  //
+  //  &::after {
+  //    border-left: $btn-height/2 solid transparent;
+  //    transform: translateX(100%);
+  //  }
+  //
+  //  &:hover {
+  //    letter-spacing: 2px;
+  //    color: tint($btn-color, 75%);
+  //
+  //    &::before { transform: translateX(-30%); }
+  //    &::after { transform: translateX(30%); }
+  //  }
+  //
+  //  @include respond(large-phone){
+  //    font-size: 1.8rem;
+  //  }
+  //}
+}
+//
+//[class^="btn-"] {
+//  position: relative;
+//  display: block;
+//  overflow: hidden;
+//  //@include size(100%, $btn-height);
+//  max-width: 25rem;
+//  margin: 1rem auto;
+//  text-transform: uppercase;
+//  border: 1px solid currentColor;
+//}
 
-    transition: color 1s;
+html {
+  transition: 0.5s ease-in-out;
+}
+a {
+  text-decoration: none;
+}
 
-    $btn-color: $gold;
-    $btn-height: 4rem;
-    $btn-color-dark: shade($btn-color, 40%);
+[class^="btn-"] {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  line-height: $btn-height;
+  width:100%;
+  max-width: 25rem;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid $gold;
+  color: $gold;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
 
-    &:before,
-    &:after {
-      content: '';
-      //@include absolute(0,0,0,0);
-      border-top: $btn-height/2 solid $btn-color-dark;
-      border-bottom: $btn-height/2 solid $btn-color-dark;
-    }
+}
 
-    &:before {
-      border-right: $btn-height/2 solid transparent;
-      transform: translateX(-100%);
-    }
+.btn-zone-in {
+  $btn-color: $gold;
+  $btn-color-dark: $gold;
+  z-index: 1;
 
-    &:after {
-      border-left: $btn-height/2 solid transparent;
-      transform: translateX(100%);
-    }
-
-    &:hover {
-      color: tint($btn-color, 75%);
-
-      &:before { transform: translateX(-30%); }
-      &:after { transform: translateX(30%); }
-    }
-
-    @include respond(large-phone){
-      font-size: 1.8rem;
-    }
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    border-top: $btn-height/2 solid $btn-color-dark;
+    border-bottom: $btn-height/2 solid $btn-color-dark;
   }
+
+  &::before {
+    border-right: $btn-height/2 solid transparent;
+    transform: translateX(-100%);
+  }
+
+  &::after {
+    border-left: $btn-height/2 solid transparent;
+    transform: translateX(100%);
+  }
+
+  &:hover {
+
+    &::before { transform: translateX(-30%); }
+    &::after { transform: translateX(30%); }
+  }
+}
+
+
+*,
+*:before,
+*:after {
+  transition: 0.5s ease-in-out;
 }
