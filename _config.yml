@@ -2,10 +2,12 @@ title: Sierra Moore
 email: sierra.v.moore@gmail.com
 image: "assets/img/sm.jpg"
 description: "Sierra Moore Web Developer Portfolio & Resume"
+keywords: "web developer, personal site, freelance web developer, front end web developer, front-end web developer, Portfolio"
 #baseurl: ""
 url: "https://sierramoore.github.io"
 repository: https://github.com/portfolio
 github_username:  sierramoore
+google_analytics: UA-122925196-1
 
 sass:
   sass_dir: _sass
