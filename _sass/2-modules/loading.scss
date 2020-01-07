@@ -15,7 +15,7 @@
 
     @include respond(phone){
       width: 35rem;
-      //transform: translateY(-700%);
+      //transform: translateY(-110vh);
       //animation: none;
       animation: launchMobile 3s forwards ease-out;
     }
@@ -60,7 +60,7 @@
     transform: translateY(110%);
   }
   to {
-    transform: translateY(-700%);
+    transform: translateY(-210vh);
     display: none;
   }
 }

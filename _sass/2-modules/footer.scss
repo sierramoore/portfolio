@@ -2,7 +2,7 @@
   position: fixed;
   bottom: 0;
   right: 1rem;
-  z-index: 3;
+  z-index: 999;
 }
 .icon-box:hover > .icon-box__text {
   opacity: 1;
