@@ -13,20 +13,24 @@ sass:
   sass_dir: _sass
   style: compressed
 
-exclude: [".idea/"]
+exclude: [".idea/", "jekyll-cache"]
 
 # Build settings
-markdown: kramdown
-theme: minima
++ markdown: CommonMark
++ commonmark:
++   options: ["SMART", "FOOTNOTES"]
++   extensions: ["strikethrough", "autolink", "table"]
 
 
-#plugins:
-#  - jekyll-feed
-#  - jekyll-sitemap
-#  - jekyll-autoprefixer
-#  - jekyll-paginate
-#  - jekyll-seo-tag
-#
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-autoprefixer
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-commonmark
+  - jekyll-include-cache
+
 #autoprefixer:
 #  browsers:
 #  - last 6 versions

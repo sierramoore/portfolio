@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.8.5"
-gem "minima", "~> 2.0"
+gem "jekyll", github: "jekyll/jekyll"
+gem "liquid-c"
 gem 'jekyll-seo-tag'
 gem 'jekyll-paginate'
 
@@ -11,9 +11,14 @@ gem 'jekyll-paginate'
 
 
 group :jekyll_plugins do
- gem "jekyll-feed", "~> 0.6"
- gem "jekyll-sitemap"
- gem 'jekyll-autoprefixer'
+  gem "jekyll-archives"
+  gem "jekyll-feed"
+  gem "jekyll-remote-theme"
+  gem "jekyll-seo-tag"
+  gem "jekyll-sitemap"
+  gem "jekyll-commonmark"
+  gem "jekyll-include-cache"
+  gem 'jekyll-autoprefixer'
 end
 
 

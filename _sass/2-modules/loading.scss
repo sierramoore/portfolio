@@ -12,6 +12,13 @@
     height: 100%;
     //animation-timing-function: $ease-out;
     animation: launch 3s forwards ease-out;
+
+    @include respond(phone){
+      width: 35rem;
+      //transform: translateY(-700%);
+      //animation: none;
+      animation: launchMobile 3s forwards ease-out;
+    }
   }
 }
 
@@ -46,6 +53,16 @@
      transform: translateY(-300%);
      display: none;
    }
+}
+
+@keyframes launchMobile {
+  from {
+    transform: translateY(110%);
+  }
+  to {
+    transform: translateY(-700%);
+    display: none;
+  }
 }
 
 @keyframes smoke {
