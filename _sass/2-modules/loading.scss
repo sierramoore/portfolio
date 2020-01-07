@@ -1,13 +1,16 @@
 .loading {
-  position: relative;
-
+  //position: relative;
+  //min-width: 100vw;
+  //min-height: 100vh;
+  //background-image: linear-gradient(rgba(1, 0, 50, 0.88), rgba(55, 164, 255, 0.99));
+  //z-index: 1;
 
   &__img {
     display: block;
     margin: auto;
     width: 60vw;
     height: 100%;
-
+    //animation-timing-function: $ease-out;
     animation: launch 3s forwards ease-out;
   }
 }
@@ -30,7 +33,7 @@
 }
 #inner_x5F_flares {
   //animation: innerFlame 3s infinite ease-in;
-  transform-origin: center;
+  //transform-origin: center;
 }
 
 

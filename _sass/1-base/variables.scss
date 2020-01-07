@@ -16,3 +16,5 @@ $dark-blue: rgba(1, 0, 50, 0.99);
 $btn-color: $gold;
 $btn-height: 5rem;
 $btn-color-dark: shade($btn-color, 40%);
+
+$ease-out: cubic-bezier(0.45, 0.6, 0.83, 1.02);
