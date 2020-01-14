@@ -31,6 +31,20 @@ body {
   //position: relative;
 }
 
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-image: $scroll-color;
+  background-color: 1px solid $scroll-color;
+  //border-radius: 10px;
+}
+
 .index-body {
   position: relative;
   background-image: linear-gradient(rgba(1, 0, 50, 0.88), rgba(55, 164, 255, 0.99));
@@ -55,7 +69,7 @@ body {
   background-image: linear-gradient(rgba(0,0,0,0.88), rgba(1, 0, 50, 0.99));
   opacity: 0;
   //animation-timing-function: $ease-out;
-  animation: slideUp 3000ms forwards .75s;
+  animation: slideUp 2500ms forwards .70s;
 }
 
 @keyframes slideUp {
