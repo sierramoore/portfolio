@@ -7,8 +7,9 @@
     <body>
 
     <div class="index-body">
+        {% include loading_animation.html %}
 
-        <header class="main">
+        <header class="main" id="main">
             <h1 class="header header__primary">Sierra Moore</h1>
             <h2 class="header header__secondary">Web Developer & Designer</h2>
 
@@ -56,8 +57,6 @@
 
             {% include footer.html %}
         </header>
-
-        {% include loading_animation.html %}
     </div>
 
     <div class="animation-wrapper" id="particlebg">
@@ -73,15 +72,26 @@
     AOS.init();
 
     const overlay = document.getElementById('overlay');
+    const main = document.getElementById('main');
 
     // window.addEventListener('load', function(){
     //     // when rest of page is done loading hide this
     //     overlay.style.display = 'none';
     // });
 
+
+        // document.getElementsByTagName('body')[0].animate({ scrollTop: 0 }, "slow");
+    // window.scrollTo(0, 0);
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+
     setTimeout(function(){
-        overlay.style.display = 'none';
-    }, 3000);
+        // overlay.style.display = 'none';
+        main.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+    }, 2000);
+
+
+
+
 
 </script>
 

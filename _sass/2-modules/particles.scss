@@ -34,9 +34,10 @@ html, body {
 //}
 
 .page-bg, .animation-wrapper {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
   //width: 100%; //broke the links
   //height: 100%;
 }

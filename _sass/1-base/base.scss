@@ -46,8 +46,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .index-body {
-  position: relative;
-  background-image: linear-gradient(rgba(1, 0, 50, 0.88), rgba(55, 164, 255, 0.99));
+  //position: relative;
+
+  //background-size: cover;
 
   //animation: slideUp 3000ms ease-in forwards;
 
@@ -57,7 +58,11 @@ body::-webkit-scrollbar-thumb {
   }
   //top
   .loading {
-
+    background-image: linear-gradient(rgba(1, 0, 50, 0.88), rgba(55, 164, 255, 0.99));
+    //position: absolute;
+    //top: 120vh;
+    //left: calc(50% - 30vw);
+    //transform: translate(50%, calc(50% - 30vw));
   }
 }
 
@@ -66,10 +71,11 @@ body::-webkit-scrollbar-thumb {
   min-height: 100vh;
   object-fit: cover;
   //position: relative;
+  z-index: 10;
   background-image: linear-gradient(rgba(0,0,0,0.88), rgba(1, 0, 50, 0.99));
-  opacity: 0;
+  //opacity: 0;
   //animation-timing-function: $ease-out;
-  animation: slideUp 2500ms forwards .70s;
+  //animation: slideUp 2500ms forwards .70s;
 }
 
 @keyframes slideUp {
